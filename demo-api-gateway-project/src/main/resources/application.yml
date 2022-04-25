@@ -1,0 +1,27 @@
+version: @project.version@
+server:
+  port: 9999
+  servlet:
+    context-path: /api-gateway
+spring:
+  application:
+    name: api-gateway
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+## 开启跨域配置，不获取上下文用户信息
+yp-frame:
+  api:
+    allowCors: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+security:
+  oauth2:
+    permit-url:

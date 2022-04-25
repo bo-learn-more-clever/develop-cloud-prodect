@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>develop-cloud-prodect</artifactId>
+        <groupId>com.yuepong.develop-cloud.demo</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>dependencies</artifactId>
+    <packaging>pom</packaging>
+
+
+    <properties>
+        <main.basedir>${basedir}/..</main.basedir>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+
+        <!--        <mybatis-plus.version>3.4.2</mybatis-plus.version>-->
+        <!--        <fastjson.version>1.2.78</fastjson.version>-->
+        <!--        <flatten-version>1.1.0</flatten-version>-->
+        <!--        <spring-cloud-starter-alibaba-nacos-discovery.version>2.2.0.RELEASE-->
+        <!--        </spring-cloud-starter-alibaba-nacos-discovery.version>-->
+        <!--        <spring-cloud-starter-alibaba-nacos-config.version>2.2.0.RELEASE-->
+        <!--        </spring-cloud-starter-alibaba-nacos-config.version>-->
+        <!--        <spring-cloud-starter-netfix-hystrix.version>2.2.0.RELEASE</spring-cloud-starter-netfix-hystrix.version>-->
+        <!--        <spring-boot-start-auth.version>2.6.4</spring-boot-start-auth.version>-->
+        <!--        <spring-cloud-start-oauth2.version>2.2.0.RELEASE</spring-cloud-start-oauth2.version>-->
+    </properties>
+
+    <dependencies>
+        <!--热部署-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        <!--lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!--测试启动-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
